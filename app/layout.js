@@ -15,9 +15,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head >
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
-      </head>
       <body className={inter.className}>
         <Header />
         <div className='pt-[60px] pb-[30px] background-color'>

@@ -5,6 +5,7 @@ import { Button, Drawer, Radio, Space } from 'antd';
 import Link from 'next/link';
 import { scroll } from "framer-motion"
 import '../app/globals.css';
+import Image from 'next/image';
 
 function Layout() {
 
@@ -34,27 +35,17 @@ function Layout() {
     return (
         <div className={`${scrollValue >= 1 ? 'bg-[#B2C8BA]' : ''} text-[#333333] container  min-w-full fixed top-0 right-0 left-0 z-50`}>
             <div className="grid grid-cols-2 px-2 py-2  md:grid-cols-8 md:px-10 xl:px-20">
-                <div className='flex md:col-span-3'>
+                <div className='flex justify-start items-center sm:grid md:col-span-3'>
                     <Link href="/">
-                        {/* <div className='flex shrink-0 rounded-lg bg-[#B2C8BA] px-2 justify-start text-sm items-center text-[#333333] hover:shadow-sm hover:shadow-black lg:text-xl xl:text-xl 2xl:text-2xl'>
-                            <p className='text-xl text-[#333333] font-medium'><span className='text-2xl '>F</span>ashin<span className='text-2xl'>B</span>uzz</p>
-                        </div> */}
-                        <div class="mb-6 md:mb-0">
-                            <a href="https://flowbite.com/" class="flex items-center">
-                                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
-                                <span class="self-center text-[#333333] text-xl font-semibold whitespace-nowrap dark:text-white">FashinBuzz</span>
-                            </a>
-                        </div>
+                        <span class="self-center text-[#333333] text-xl font-semibold whitespace-nowrap dark:text-white">FashinBuzz</span>
                     </Link>
                 </div>
-                <div className='grid md:col-span-5'>
+                <div className='flex justify-end items-center sm:grid md:col-span-5'>
 
                     <div className='flex  justify-end items-center md:hidden'>
-
                         <p className='p-1 ' onClick={showDrawer}>
-                            <i className='fa fa-bars'></i>
+                            <Image src="/Images/icons8-menu-30.png" width={20} height={20} alt='menu-icon' />
                         </p>
-
                         <Drawer
                             title="FashinBuzz"
                             placement={placement}
@@ -65,33 +56,33 @@ function Layout() {
                             className='relative'
                         >
                             <Link href="/" onClick={() => setOpen(false)}>
-                                <div className='flex shrink-0 justify-start  text-sm items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
+                                <div className='flex shrink-0 justify-start  text-base items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
                                     <p className='font-medium  '>Home</p>
                                 </div>
                             </Link>
                             <Link href="/about" onClick={() => setOpen(false)}>
-                                <div className='flex shrink-0 justify-start  text-sm items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
+                                <div className='flex shrink-0 justify-start  text-base items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
                                     <p className='font-medium  '>About Us</p>
                                 </div>
                             </Link>
                             <Link href="/blog" onClick={() => setOpen(false)}>
-                                <div className='flex shrink-0 justify-start  text-sm items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
+                                <div className='flex shrink-0 justify-start  text-base items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
                                     <p className='font-medium  '>Blog</p>
                                 </div>
                             </Link>
                             <Link href="/our-service" onClick={() => setOpen(false)}>
-                                <div className='flex shrink-0 justify-start  text-sm items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
+                                <div className='flex shrink-0 justify-start  text-base items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
                                     <p className='font-medium  '>Our Services</p>
                                 </div>
                             </Link>
 
                             <Link href="/categories" onClick={() => setOpen(false)}>
-                                <div className='flex shrink-0 justify-start  text-sm items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
+                                <div className='flex shrink-0 justify-start  text-base items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
                                     <p className='font-medium  '>Categories</p>
                                 </div>
                             </Link>
                             <Link href="/connect" onClick={() => setOpen(false)}>
-                                <div className='flex shrink-0 justify-start  text-sm items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
+                                <div className='flex shrink-0 justify-start  text-base items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
                                     <p className='font-medium  '>Connect</p>
                                 </div>
                             </Link>

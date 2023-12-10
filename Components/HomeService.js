@@ -30,7 +30,7 @@ function HomeService() {
                             className='object-cover w-full' />
                     </figure>
                     <div className="card-body bg-[#B2C8BA] rounded-r-xl">
-                        <h2 className="card-title">Manufacturing</h2>
+                        <h2 className="font-semibold">Manufacturing</h2>
                         <p className='text-sm'>we have harnessed the transformative capabilities of AI to revolutionize our manufacturing processes, ensuring the production of high-quality products that meet and exceed industry standards.</p>
                     </div>
                 </div>
