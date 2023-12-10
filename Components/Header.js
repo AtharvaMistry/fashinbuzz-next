@@ -1,35 +1,44 @@
 "use client";
 
-import React, { useEffect, useState } from 'react'
 import { Button, Drawer, Radio, Space } from 'antd';
 import Link from 'next/link';
-import { scroll } from "framer-motion"
 import '../app/globals.css';
 import Image from 'next/image';
+import useLayoutState from './useLayout';
 
 function Layout() {
 
-    const [open, setOpen] = useState(false);
-    const [selectedLink, setSelectedLink] = useState(null);
-    const [placement, setPlacement] = useState('right');
-    const [scrollValue, setscrollValue] = useState(0);
-    const showDrawer = () => {
-        setOpen(true);
-    };
-    const onClose = () => {
-        setOpen(false);
-    };
-    const onChange = (e) => {
-        setPlacement(e.target.value);
-    };
+    const {
+        open,
+        selectedLink,
+        placement,
+        scrollValue,
+        showDrawer,
+        onClose,
+        onChange,
+    } = useLayoutState();
+
+    // const [open, setOpen] = useState(false);
+    // const [selectedLink, setSelectedLink] = useState(null);
+    // const [placement, setPlacement] = useState('right');
+    // const [scrollValue, setscrollValue] = useState(0);
+    // const showDrawer = () => {
+    //     setOpen(true);
+    // };
+    // const onClose = () => {
+    //     setOpen(false);
+    // };
+    // const onChange = (e) => {
+    //     setPlacement(e.target.value);
+    // };
 
     // controlling scrolling behavior
-    useEffect(() => {
-        scroll(progress => {
-            const scroll = Math.floor(progress * 100);
-            setscrollValue(scroll);
-        })
-    }, [])
+    // useEffect(() => {
+    //     scroll(progress => {
+    //         const scroll = Math.floor(progress * 100);
+    //         setscrollValue(scroll);
+    //     })
+    // }, [])
 
 
     return (
