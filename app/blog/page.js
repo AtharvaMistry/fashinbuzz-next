@@ -1,3 +1,4 @@
+import Contact from "@/Components/Contact"
 
 function page() {
     return (
@@ -70,6 +71,7 @@ function page() {
                     </div>
                 </section>
             </div>
+            <Contact />
 
         </>
     )

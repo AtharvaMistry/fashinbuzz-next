@@ -1,3 +1,4 @@
+import Contact from "@/Components/Contact"
 import Link from "next/link"
 
 function page() {
@@ -65,12 +66,8 @@ function page() {
                 </section>
             </div>
 
-            <div className="grid text-center mt-10 place-items-center">
-                <p className='text-xl mb-3 text-[#333333] md:text-3xl font-medium'>One Stop Solution For <br />Fashion Manufacturing</p>
-                <Link href="/connect">
-                    <button className='bg-[#B2C8BA] px-3 py-1 rounded-md max-w-[300px] shrink-0 text-[#333333] md:text-2xl hover:drop-shadow-md '>Connect with us</button>
-                </Link>
-            </div>
+            <Contact />
+
         </>
     )
 }

@@ -51,8 +51,9 @@ function Layout() {
 
                     <div className='flex  justify-end items-center md:hidden'>
 
-                        {/* <i class="fa fa-bars text-[#545B77]" aria-hidden="true" onClick={showDrawer}></i> */}
-                        <p className='p-1 ' onClick={showDrawer}>H</p>
+                        <p className='p-1 ' onClick={showDrawer}>
+                            <i className='fa fa-bars'></i>
+                        </p>
 
                         <Drawer
                             title="FashinBuzz"
