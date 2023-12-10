@@ -1,4 +1,3 @@
-"use client";
 
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -16,29 +15,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-
-  const [open, setOpen] = useState(false);
-  const [selectedLink, setSelectedLink] = useState(null);
-  const [placement, setPlacement] = useState('right');
-  const [scrollValue, setscrollValue] = useState(0);
-  const showDrawer = () => {
-    setOpen(true);
-  };
-  const onClose = () => {
-    setOpen(false);
-  };
-  const onChange = (e) => {
-    setPlacement(e.target.value);
-  };
-
-  // controlling scrolling behavior
-  useEffect(() => {
-    scroll(progress => {
-      const scroll = Math.floor(progress * 100);
-      setscrollValue(scroll);
-    })
-  }, [])
-
   return (
     <html lang="en">
       <body className={inter.className}>
