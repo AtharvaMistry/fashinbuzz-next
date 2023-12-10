@@ -37,7 +37,7 @@ function Layout() {
             <div className="grid grid-cols-2 px-2 py-2  md:grid-cols-8 md:px-10 xl:px-20">
                 <div className='flex justify-start items-center sm:grid md:col-span-3'>
                     <Link href="/">
-                        <span class="self-center text-[#333333] text-xl font-semibold whitespace-nowrap dark:text-white">FashinBuzz</span>
+                        <span className="self-center text-[#333333] text-xl font-semibold whitespace-nowrap dark:text-white">FashinBuzz</span>
                     </Link>
                 </div>
                 <div className='flex justify-end items-center sm:grid md:col-span-5'>

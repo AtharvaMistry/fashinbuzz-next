@@ -295,7 +295,7 @@ export default function Home() {
                     What is benifit from your side?
                   </summary>
                   <div className="px-4 pb-4">
-                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                    <blockquote className="text-md italic font-semibold text-gray-900 dark:text-white">
                       <p>We have transparent supply chain and have best technology. for D2C fashionbrand, we are one of the top manufacturing service provider in india. we provide omnichannel platform.</p>
                     </blockquote>
                   </div>
@@ -304,7 +304,7 @@ export default function Home() {
                   <summary className="py-2 outline-none cursor-pointer focus:underline">What is delivery time</summary>
                   <div className="px-4 pb-4">
 
-                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                    <blockquote className="text-md italic font-semibold text-gray-900 dark:text-white">
                       <p>We build relation by heart with our client , so we take your hurdles.</p>
                     </blockquote>
                   </div>
@@ -313,7 +313,7 @@ export default function Home() {
                   <summary className="py-2 outline-none cursor-pointer focus:underline">is there customer support available?</summary>
                   <div className="px-4 pb-4 space-y-2">
 
-                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                    <blockquote className="text-md italic font-semibold text-gray-900 dark:text-white">
                       <p>100 pieces.</p>
                     </blockquote>
                   </div>
@@ -322,7 +322,7 @@ export default function Home() {
                   <summary className="py-2 outline-none cursor-pointer focus:underline">Payment condition?</summary>
                   <div className="px-4 pb-4 space-y-2">
 
-                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                    <blockquote className="text-md italic font-semibold text-gray-900 dark:text-white">
                       <p>Any first 3 bill in advance then ww will provide credit facility.</p>
                     </blockquote>
                   </div>
@@ -331,7 +331,7 @@ export default function Home() {
                   <summary className="py-2 outline-none cursor-pointer focus:underline">what if I received damage peice in delivery?</summary>
                   <div className="px-4 pb-4 space-y-2">
 
-                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                    <blockquote className="text-md italic font-semibold text-gray-900 dark:text-white">
                       <p>We have claim process.</p>
                     </blockquote>
                   </div>
@@ -339,7 +339,7 @@ export default function Home() {
                 <details>
                   <summary className="py-2 outline-none cursor-pointer focus:underline">You provide design or not?</summary>
                   <div className="px-4 pb-4 space-y-2">
-                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                    <blockquote className="text-md italic font-semibold text-gray-900 dark:text-white">
                       <p>Yes, we provide design .</p>
                     </blockquote>
                   </div>
@@ -353,7 +353,7 @@ export default function Home() {
         <Contact />
       </div>
 
-   
+
     </>
   )
 }
