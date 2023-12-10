@@ -16,7 +16,9 @@ export default function Home() {
 
         {/* image carousel */}
         {/* <IntroCarousel /> */}
-        <div className="grid px-5 my-10 md:px-10">
+
+
+        {/* <div className="grid px-5 my-10 md:px-10">
           <div className="carousel w-full h-[350px]">
             <div id="item1" className="carousel-item w-full">
               <Image src="/images/home1 (1).png" alt='' width={1000} height={350} className='w-full' layout='responsive' />
@@ -29,10 +31,10 @@ export default function Home() {
             <a href="#item1" className="btn btn-xs">1</a>
             <a href="#item2" className="btn btn-xs">2</a>
           </div>
-        </div>
+        </div> */}
         {/* data */}
         {/* <HomeData /> */}
-        <div className="grid px-5 md:px-10">
+        <div className="grid px-5 mt-5 md:px-10">
           <div className="stats shadow bg-[#B2C8BA] min-w-full">
             <div className="stat">
               <div className="stat-figure text-primary">

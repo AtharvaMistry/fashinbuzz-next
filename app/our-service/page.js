@@ -7,7 +7,7 @@ function page() {
         <>
 
 
-            <div className="grid px-5 gap-5 sm:px-10">
+            <div className="grid px-5 mb-5 gap-5 sm:px-10">
                 <p className='text-xl mb-3 text-[#545B77] min-w-full col-span-1 border-dotted border-2 border-[#86A789] py-1 text-center '>What we offer</p>
                 <div className="flex flex-col items-center min-w-full bg-[#B2C8BA] border border-[#D2E3C8] rounded-lg shadow md:flex-row md:max-w-xl hover:bg-[#D2E3C8] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                     <Image src="/Images/service3.png"
