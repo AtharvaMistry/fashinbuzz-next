@@ -1,10 +1,5 @@
 
 import Contact from '@/Components/Contact'
-import HomeData from '@/Components/HomeData'
-import HomeFaq from '@/Components/HomeFaq'
-import HomeHelp from '@/Components/HomeHelp'
-import HomeService from '@/Components/HomeService'
-import IntroCarousel from '@/Components/IntroCarousel'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -65,7 +60,6 @@ export default function Home() {
         </div>
 
         {/* service */}
-        {/* <HomeService /> */}
         <div className="grid grid-cols-1 my-10 px-5 gap-5 place-items-center md:px-10 md:grid-cols-2">
           <p className='col-span-1 min-w-full text-xl mb-3 text-[#545B77] border-dotted border-2 border-[#86A789] py-1 text-center md:col-span-2'>Our Services</p>
 
@@ -124,19 +118,288 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
+
         {/* How can we help? */}
-        <HomeHelp />
+        <div className="grid grid-cols-1 my-10 px-5 gap-5 sm:grid-cols-2 md:grid-cols-2 md:px-10 xl:grid-cols-4 2xl:grid-cols-4">
+          <p className='text-xl mb-3 text-[#545B77] min-w-full col-span-1 border-dotted border-2 border-[#86A789] py-1 text-center sm:col-span-2 xl:col-span-4'>How can we help?</p>
+          <div className="card max-w-[350px] glass col-span-1">
+            <figure>
+              <Image src="/Images/help(4).jpg"
+                width={100}
+                quality={100}
+                height={100}
+                alt=''
+                className='object-cover w-full' />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Harnessing AI for Trend Prediction</h2>
+              <p>Using AI, We can minimize dead-stock.
+                Get update with latest design.
+                Reduce burden for making design everyday</p>
+            </div>
+          </div>
+          <div className="card max-w-[350px] glass col-span-1">
+            <figure>
+              <Image src="/Images/help(3).jpg"
+                width={100}
+                height={100}
+                quality={100}
+                alt=''
+                className='object-cover w-full' />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Wide Variety of Designs in Limitless Fabric Options</h2>
+              <p>We have thousands of fabric option across all type of fabrics.
+
+                We give best price in the world.
+
+                Get latest update on fabric everyday.</p>
+
+            </div>
+          </div>
+          <div className="card max-w-[350px] glass col-span-1">
+            <figure>
+              <Image src="/Images/help(2).jpg"
+                width={100}
+                height={100}
+                quality={100}
+                alt=''
+                className='object-cover w-full max-h-[255px]' />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Minimum Order Quantity (MOQ) as Low as 100 Pieces per Style</h2>
+              <p>
+                No overstock issues.
+
+                All size variant available.
+
+                We check quality on each phase.</p>
+
+            </div>
+          </div>
+          <div className="card max-w-[350px] glass col-span-1">
+            <figure>
+              <Image src="/Images/help(1).jpg"
+                width={100}
+                height={100}
+                quality={100}
+                alt=''
+                className='object-cover w-full' />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Design to Delivery fastest.</h2>
+              <p>We present every-stage of supply chain.
+
+                Secure packaging.
+
+                Transparent logistic.</p>
+
+            </div>
+          </div>
+        </div>
 
         {/* categories */}
-
+        <div className="grid my-10 px-5 gap-5 md:px-10">
+          <p className='text-xl mb-3 text-[#545B77] col-span-1 border-dotted border-2 border-[#86A789] py-1 text-center'>Product Category</p>
+          <div className="carousel carousel-center min-w-screen p-4 space-x-4 bg-[#B2C8BA] rounded-box">
+            <div className="carousel-item">
+              <div className='flex flex-col justify-between items-center'>
+                <Image src="/Images/group (4).png"
+                  width={220}
+                  height={100}
+                  quality={100}
+                  alt=''
+                  className='object-cover h-full rounded-t-xl' />
+                <p className='bg-[#D2E3C8] w-full px-5 py-2 text-center rounded-b-lg'>Ethinic Wear</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className='flex flex-col justify-between items-center'>
+                <Image src="/Images/western-wear.jpg"
+                  width={220}
+                  height={100}
+                  quality={100}
+                  alt=''
+                  className='object-cover  h-full rounded-t-xl' />
+                <p className='bg-[#D2E3C8] w-full px-5 py-2 text-center rounded-b-lg'>Western Wear</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className='flex flex-col justify-between items-center'>
+                <Image
+                  src="/Images/casual.jpg"
+                  quality={100}
+                  width={220}
+                  height={100}
+                  alt=''
+                  className='object-cover h-full rounded-t-xl' />
+                <p className='bg-[#D2E3C8] w-full px-5 py-2 text-center rounded-b-lg'>Casual Wear</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className='flex flex-col justify-between items-center'>
+                <Image src="/Images/group (3).png"
+                  width={220}
+                  height={100}
+                  quality={100}
+                  alt=''
+                  className='object-cover  h-full rounded-t-xl' />
+                <p className='bg-[#D2E3C8] w-full px-5 py-2 text-center rounded-b-lg'>Winter Wear</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className='flex flex-col justify-between items-center'>
+                <Image src="/Images/lounge-wear.jpg"
+                  width={220}
+                  height={100}
+                  quality={100}
+                  alt=''
+                  className='object-cover h-full rounded-t-xl' />
+                <p className='bg-[#D2E3C8] w-full px-5 py-2 text-center rounded-b-lg'>Lounge Wear</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className='flex flex-col justify-between items-center'>
+                <Image src="/Images/group (2).png"
+                  width={220}
+                  height={100}
+                  quality={100}
+                  alt=''
+                  className='object-cover h-full rounded-t-xl' />
+                <p className='bg-[#D2E3C8] w-full px-5 py-2 text-center rounded-b-lg'>Active Wear</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className='flex flex-col justify-between items-center'>
+                <Image src="/Images/group (1).png"
+                  width={220}
+                  height={100}
+                  quality={100}
+                  alt=''
+                  className='object-cover  h-full rounded-t-xl' />
+                <p className='bg-[#D2E3C8] w-full px-5 py-2 text-center rounded-b-lg'>Kids Wear</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* faq */}
-        <HomeFaq />
+        <div className="grid my-10 px-5 md:px-10">
+          <section className="dark:bg-gray-800 dark:text-gray-100">
+            <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
+              <p className="p-2 text-sm font-medium tracki text-center uppercase">How it works</p>
+              <h2 className="mb-12 text-4xl font-bold leadi text-center sm:text-5xl">Frequently Asked Questions</h2>
+              <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 dark:divide-gray-700">
+                <details>
+                  <summary className="py-2 outline-none cursor-pointer focus:underline">
+                    What is benifit from your side?
+                  </summary>
+                  <div className="px-4 pb-4">
+                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                      <p>We have transparent supply chain and have best technology. for D2C fashionbrand, we are one of the top manufacturing service provider in india. we provide omnichannel platform.</p>
+                    </blockquote>
+                  </div>
+                </details>
+                <details>
+                  <summary className="py-2 outline-none cursor-pointer focus:underline">What is delivery time</summary>
+                  <div className="px-4 pb-4">
+
+                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                      <p>We build relation by heart with our client , so we take your hurdles.</p>
+                    </blockquote>
+                  </div>
+                </details>
+                <details>
+                  <summary className="py-2 outline-none cursor-pointer focus:underline">is there customer support available?</summary>
+                  <div className="px-4 pb-4 space-y-2">
+
+                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                      <p>100 pieces.</p>
+                    </blockquote>
+                  </div>
+                </details>
+                <details>
+                  <summary className="py-2 outline-none cursor-pointer focus:underline">Payment condition?</summary>
+                  <div className="px-4 pb-4 space-y-2">
+
+                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                      <p>Any first 3 bill in advance then ww will provide credit facility.</p>
+                    </blockquote>
+                  </div>
+                </details>
+                <details>
+                  <summary className="py-2 outline-none cursor-pointer focus:underline">what if I received damage peice in delivery?</summary>
+                  <div className="px-4 pb-4 space-y-2">
+
+                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                      <p>We have claim process.</p>
+                    </blockquote>
+                  </div>
+                </details>
+                <details>
+                  <summary className="py-2 outline-none cursor-pointer focus:underline">You provide design or not?</summary>
+                  <div className="px-4 pb-4 space-y-2">
+                    <blockquote class="text-md italic font-semibold text-gray-900 dark:text-white">
+                      <p>Yes, we provide design .</p>
+                    </blockquote>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </section>
+        </div>
 
         {/* contact */}
         <Contact />
       </div>
+
+      <footer class="bg-[#B2C8BA] mt-5 dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div class="px-5 md:flex md:justify-between md:px-10">
+            <div class="mb-6 flex justify-start flex-col items-start gap-3 md:mb-0">
+              <div className="flex justify-start items-start">
+                <Image src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" width={20} height={20} alt="FlowBite Logo" />
+                <span class="self-center text-[#333333] text-2xl font-semibold whitespace-nowrap dark:text-white">FashinBuzz</span>
+              </div>
+              <span className="text-[#333333]">+91 84608 00999</span>
+              <span className="text-[#333333]">help@fashinbuzz.com</span>
+
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li className="mb-4">
+                    <Link href="/connect" className="hover:underline">Connect</Link>
+                  </li>
+                  <li className="mb-4">
+                    <Link href="/blog" className="hover:underline">Blog</Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li className="mb-4">
+                    <Link href="/about" className=" hover:underline">About</Link>
+                  </li>
+
+                  <li className="mb-4">
+                    <Link href="/our-service" className="hover:underline">Our Services</Link>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <div class="px-5 sm:flex sm:items-center sm:justify-between md:px-10">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <Link href="/" class="hover:underline">FashinBuzz™</Link>. All Rights Reserved.
+            </span>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }
