@@ -28,7 +28,7 @@ function Page() {
   const handleFormData = async () => {
     try {
       console.log("add blog api");
-      const res = await fetch("http://fashinbuzz-next-atharvamistrys-projects.vercel.app/api/form", {
+      const res = await fetch("http://fashinbuzz.com/api/form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

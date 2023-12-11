@@ -17,7 +17,7 @@ export default function Home() {
   } = useLayoutState();
   return (
     <>
-      {/* header */}\
+      {/* header */}
       <div
         className={`${scrollValue >= 1 ? "bg-[#B2C8BA]" : ""
           } text-[#333333] container  min-w-full fixed top-0 right-0 left-0 z-50`}
