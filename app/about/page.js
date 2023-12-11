@@ -1,3 +1,5 @@
+"use client";
+
 import Contact from "@/Components/Contact"
 import useLayoutState from "@/Components/useLayout";
 import { Drawer } from "antd";

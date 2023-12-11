@@ -22,7 +22,7 @@ function Page() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/blog");
+        const res = await fetch("http://fashinbuzz-next-pdau0lhec-atharvamistrys-projects.vercel.app/api/blog");
         if (!res.ok) {
           throw new Error("Failed to fetch data");
         }
@@ -217,7 +217,7 @@ function Page() {
       <div className="grid gap-5 px-5 sm:px-10">
         {data?.topics?.map((ele) => (
           <>
-            <div key={ele._id} className="grid gap-5">
+            <div key={ele._id} className="grid gap-5 p-4">
               <p className="text-2xl font-semibold ">{ele.title}</p>
               <p className="text-[#333333] ">{ele.description}</p>
             </div>

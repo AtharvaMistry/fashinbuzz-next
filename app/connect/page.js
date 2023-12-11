@@ -1,4 +1,5 @@
 "use client";
+import useLayoutState from "@/Components/useLayout";
 import { Drawer } from "antd";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,7 +28,7 @@ function Page() {
   const handleFormData = async () => {
     try {
       console.log("add blog api");
-      const res = await fetch("http://localhost:3000/api/form", {
+      const res = await fetch("http://fashinbuzz-next-pdau0lhec-atharvamistrys-projects.vercel.app/api/form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
