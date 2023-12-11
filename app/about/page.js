@@ -207,7 +207,7 @@ function Page() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 px-5 border-dotted border-t-2 border-b-2 border-[#86A789] sm:grid-cols-2 sm:px-10">
+            <div className="grid grid-cols-1 px-5 mb-5 border-dotted border-t-2 border-b-2 border-[#86A789] sm:grid-cols-2 sm:px-10">
                 <section className="md:px-6">
                     <div className="container max-w-xl mx-auto">
                         <div className="flex flex-col items-center w-full p-6 space-y-8 rounded-md lg:h-full lg:p-8 dark:bg-gray-900 dark:text-gray-100">
