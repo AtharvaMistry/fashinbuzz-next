@@ -82,7 +82,7 @@ function Page() {
                                         <p className="font-medium  ">Connect</p>
                                     </div>
                                 </Link>
-                               
+
                                 <button
                                     onClick={() => setOpen(false)}
                                     className="border border-black rounded-md px-3 py-1 absolute bottom-5 right-5"
@@ -186,10 +186,10 @@ function Page() {
             </div>
             {/* header */}
 
-            <div className="grid grid-cols-1 px-5 gap-8 my-10 sm:grid-cols-3 sm:px-10 lg:grid-cols-4">
+            <div className="grid grid-cols-1 px-5 min-w-full place-items-center gap-8 my-10 sm:grid-cols-3 sm:px-10 lg:grid-cols-4">
                 <p className='text-xl mb-3 text-[#545B77] min-w-full px-5 col-span-1 border-dotted border-2 border-[#86A789] py-1 text-center sm:px-10 sm:col-span-3 lg:col-span-4'>Our Categories</p>
                 <div className="carousel-item">
-                    <div className='flex flex-col justify-between items-center'>
+                    <div className='flex flex-col justify-between items-center sm:min-h-[380px]'>
                         <Image src="/Images/group (4).png"
                             width={220}
                             height={100}
@@ -200,7 +200,7 @@ function Page() {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <div className='flex flex-col justify-between items-center'>
+                    <div className='flex flex-col justify-between items-center sm:min-h-[380px]'>
                         <Image src="/Images/western-wear.jpg"
                             width={220}
                             height={100}
@@ -211,7 +211,7 @@ function Page() {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <div className='flex flex-col justify-between items-center'>
+                    <div className='flex flex-col justify-between items-center sm:min-h-[380px]'>
                         <Image
                             src="/Images/casual.jpg"
                             quality={100}
@@ -223,7 +223,7 @@ function Page() {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <div className='flex flex-col justify-between items-center'>
+                    <div className='flex flex-col justify-between items-center sm:min-h-[380px]'>
                         <Image src="/Images/group (3).png"
                             width={220}
                             height={100}
@@ -234,7 +234,7 @@ function Page() {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <div className='flex flex-col justify-between items-center'>
+                    <div className='flex flex-col justify-between items-center sm:min-h-[380px]'>
                         <Image src="/Images/lounge-wear.jpg"
                             width={220}
                             height={100}
@@ -245,7 +245,7 @@ function Page() {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <div className='flex flex-col justify-between items-center'>
+                    <div className='flex flex-col justify-between items-center sm:min-h-[380px]'>
                         <Image src="/Images/group (2).png"
                             width={220}
                             height={100}
@@ -256,7 +256,7 @@ function Page() {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <div className='flex flex-col justify-between items-center'>
+                    <div className='flex flex-col justify-between items-center sm:min-h-[380px]'>
                         <Image src="/Images/group (1).png"
                             width={220}
                             height={100}
@@ -267,6 +267,7 @@ function Page() {
                     </div>
                 </div>
             </div>
+
 
             <Contact />
 

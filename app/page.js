@@ -299,9 +299,9 @@ export default function Home() {
         </div>
 
         {/* How can we help? */}
-        <div className="grid grid-cols-1 my-10 px-5 gap-5 sm:grid-cols-2 md:grid-cols-2 md:px-10 xl:grid-cols-4 2xl:grid-cols-4">
+        <div className="grid grid-cols-1 my-10 px-5 gap-5 place-items-center sm:grid-cols-2 md:grid-cols-2 md:px-10 xl:grid-cols-4 2xl:grid-cols-4">
           <p className='text-xl mb-3 text-[#545B77] min-w-full col-span-1 border-dotted border-2 border-[#86A789] py-1 text-center sm:col-span-2 xl:col-span-4'>How can we help?</p>
-          <div className="card max-w-[350px] glass col-span-1">
+          <div className="card max-w-[350px] glass col-span-1 sm:min-h-[470px]">
             <figure>
               <Image src="/Images/help(4).jpg"
                 width={100}
@@ -317,7 +317,7 @@ export default function Home() {
                 Reduce burden for making design everyday</p>
             </div>
           </div>
-          <div className="card max-w-[350px] glass col-span-1">
+          <div className="card max-w-[350px] glass col-span-1 sm:min-h-[470px]">
             <figure>
               <Image src="/Images/help(3).jpg"
                 width={100}
@@ -336,7 +336,7 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="card max-w-[350px] glass col-span-1">
+          <div className="card max-w-[350px] glass col-span-1 sm:min-h-[470px]">
             <figure>
               <Image src="/Images/help(2).jpg"
                 width={100}
@@ -356,7 +356,7 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="card max-w-[350px] glass col-span-1">
+          <div className="card max-w-[350px] glass col-span-1 sm:min-h-[470px]">
             <figure>
               <Image src="/Images/help(1).jpg"
                 width={100}
