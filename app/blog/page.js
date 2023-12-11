@@ -107,11 +107,7 @@ function Page() {
                     <p className="font-medium  ">Connect</p>
                   </div>
                 </Link>
-                <Link href="/admin" onClick={() => setOpen(false)}>
-                  <div className="flex shrink-0 justify-start  text-base items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl">
-                    <p className="font-medium  ">Admin</p>
-                  </div>
-                </Link>
+
                 <button
                   onClick={() => setOpen(false)}
                   className="border border-black rounded-md px-3 py-1 absolute bottom-5 right-5"

@@ -41,9 +41,8 @@ function Layout() {
 
   return (
     <div
-      className={`${
-        scrollValue >= 1 ? "bg-[#B2C8BA]" : ""
-      } text-[#333333] container  min-w-full fixed top-0 right-0 left-0 z-50`}
+      className={`${scrollValue >= 1 ? "bg-[#B2C8BA]" : ""
+        } text-[#333333] container  min-w-full fixed top-0 right-0 left-0 z-50`}
     >
       <div className="grid grid-cols-2 px-2 py-2  md:grid-cols-8 md:px-10 xl:px-20">
         <div className="flex justify-start items-center sm:grid md:col-span-2">
@@ -103,11 +102,7 @@ function Layout() {
                   <p className="font-medium  ">Connect</p>
                 </div>
               </Link>
-              <Link href="/admin" onClick={() => setOpen(false)}>
-                <div className="flex shrink-0 justify-start  text-base items-center mb-3 text-[#333333] hover:text-[#333333] hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl">
-                  <p className="font-medium  ">Admin</p>
-                </div>
-              </Link>
+
               <button
                 onClick={() => setOpen(false)}
                 className="border border-black rounded-md px-3 py-1 absolute bottom-5 right-5"
