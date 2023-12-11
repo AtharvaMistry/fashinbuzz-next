@@ -22,7 +22,7 @@ function Page() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://fashinbuzz-next-pdau0lhec-atharvamistrys-projects.vercel.app/api/blog");
+        const res = await fetch("http://fashinbuzz-next-atharvamistrys-projects.vercel.app/api/blog");
         if (!res.ok) {
           throw new Error("Failed to fetch data");
         }

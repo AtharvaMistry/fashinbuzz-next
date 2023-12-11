@@ -23,7 +23,7 @@ function Page() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://fashinbuzz-next-pdau0lhec-atharvamistrys-projects.vercel.app/api/blog");
+        const res = await fetch("http://fashinbuzz-next-atharvamistrys-projects.vercel.app/api/blog");
         if (!res.ok) {
           throw new Error("Failed to fetch data");
         }
@@ -42,8 +42,8 @@ function Page() {
   const handleBlogDelete = async (blogId) => {
     try {
       console.log(blogId, "blogId");
-      // const res = await fetch(`http://fashinbuzz-next-pdau0lhec-atharvamistrys-projects.vercel.app/api/blog/${blogId}`);
-      const res = await fetch(`http://fashinbuzz-next-pdau0lhec-atharvamistrys-projects.vercel.app/api/blog?id=${blogId}`, {
+      // const res = await fetch(`http://fashinbuzz-next-atharvamistrys-projects.vercel.app/api/blog/${blogId}`);
+      const res = await fetch(`http://fashinbuzz-next-atharvamistrys-projects.vercel.app/api/blog?id=${blogId}`, {
         method: "DELETE",
         headers: {
           id: blogId,
@@ -67,7 +67,7 @@ function Page() {
       console.log(blogId, "update blog api");
 
       const res = await fetch(
-        `http://fashinbuzz-next-pdau0lhec-atharvamistrys-projects.vercel.app/api/blog/id?id=${blogId}`,
+        `http://fashinbuzz-next-atharvamistrys-projects.vercel.app/api/blog/id?id=${blogId}`,
         {
           method: "PUT",
           headers: {
@@ -107,7 +107,7 @@ function Page() {
   const handleAddBlog = async () => {
     try {
       console.log("add blog api");
-      const res = await fetch("http://fashinbuzz-next-pdau0lhec-atharvamistrys-projects.vercel.app/api/blog", {
+      const res = await fetch("http://fashinbuzz-next-atharvamistrys-projects.vercel.app/api/blog", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
