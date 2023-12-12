@@ -22,7 +22,7 @@ function Page() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://fashinbuzz.com/api/blog");
+        const res = await fetch("https://fashinbuzz.com/api/blog");
         if (!res.ok) {
           throw new Error("Failed to fetch data");
         }
