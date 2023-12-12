@@ -41,7 +41,6 @@ function Page() {
   // delete data
   const handleBlogDelete = async (blogId) => {
     try {
-      console.log(blogId, "blogId");
       // const res = await fetch(`https://fashinbuzz.com/api/blog/${blogId}`);
       const res = await fetch(`https://fashinbuzz.com/api/blog?id=${blogId}`, {
         method: "DELETE",
@@ -64,7 +63,6 @@ function Page() {
   // update
   const handleBlogUpdate = async (blogId) => {
     try {
-      console.log(blogId, "update blog api");
 
       const res = await fetch(
         `https://fashinbuzz.com/api/blog/id?id=${blogId}`,
@@ -106,7 +104,6 @@ function Page() {
   // add blog
   const handleAddBlog = async () => {
     try {
-      console.log("add blog api");
       const res = await fetch("https://fashinbuzz.com/api/blog", {
         method: "POST",
         headers: {
@@ -222,7 +219,6 @@ function Page() {
                     // onClick={() => handleBlogUpdate(ele._id)}
                     onClick={() => showUpdateModal(ele._id)}
                   // onClick={() => {
-                  //   console.log("true");
                   //   setmodelUpdate(true);
                   // }}
                   >

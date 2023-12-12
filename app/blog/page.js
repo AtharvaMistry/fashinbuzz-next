@@ -27,7 +27,6 @@ function Page() {
           throw new Error("Failed to fetch data");
         }
         const jsonData = await res.json();
-        console.log(jsonData, "json data");
         setData(jsonData);
       } catch (error) {
         console.error("Error fetching data:", error.message);
@@ -36,9 +35,7 @@ function Page() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    console.log(data, "data");
-  }, []);
+
 
   return (
     <>
