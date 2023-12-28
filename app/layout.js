@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
                     FashinBuzz
                   </span>
                 </div>
-                <span className="text-[#333333]">+91 84608 00999</span>
+                <span className="text-[#333333]">+91 6356280726</span>
                 <span className="text-[#333333]">help@fashinbuzz.com</span>
               </div>
               <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

@@ -41,7 +41,6 @@ function Page() {
   // delete data
   const handleBlogDelete = async (blogId) => {
     try {
-      // const res = await fetch(`https://fashinbuzz.com/api/blog/${blogId}`);
       const res = await fetch(`https://fashinbuzz.com/api/blog?id=${blogId}`, {
         method: "DELETE",
         headers: {
@@ -51,9 +50,6 @@ function Page() {
       if (!res.ok) {
         throw new Error("Failed to delete blog post");
       }
-      // Update the data after deletion
-      // const updatedData = data.topics.filter((ele) => ele._id !== blogId);
-      // setData({ topics: updatedData });
       setdeleteToast(true);
     } catch (error) {
       console.error("Error deleting blog post:", error.message);
@@ -115,11 +111,6 @@ function Page() {
       if (!res.ok) {
         throw new Error("Failed to add blog post");
       }
-      // Update the data after adding a new blog post
-      // const newData = await res.json();
-      // setData((prevData) => ({
-      //   topics: [...prevData.topics, newData],
-      // }));
       settoastAdd(true);
       setAddBlog({
         title: "",
@@ -155,7 +146,7 @@ function Page() {
                   }))
                 }
                 placeholder="title"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block min-w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className=""
               />
             </div>
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">

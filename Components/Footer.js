@@ -4,7 +4,6 @@ import Link from "next/link"
 function Footer() {
     return (
         <>
-
             <footer className="bg-[#B2C8BA]  dark:bg-gray-900">
                 <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                     <div className="px-5 md:flex md:justify-between md:px-10">
@@ -13,7 +12,7 @@ function Footer() {
                                 <Image src="https://flowbite.com/docs/images/logo.svg" className="h-8 me-3" width={20} height={20} alt="FlowBite Logo" />
                                 <span className="self-center text-[#333333] text-2xl font-semibold whitespace-nowrap dark:text-white">FashinBuzz</span>
                             </div>
-                            <span className="text-[#333333]">+91 84608 00999</span>
+                            <span className="text-[#333333]">+91 6356280726</span>
                             <span className="text-[#333333]">help@fashinbuzz.com</span>
 
                         </div>
