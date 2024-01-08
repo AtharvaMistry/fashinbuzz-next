@@ -244,7 +244,7 @@ export default function Home() {
 
           <div className="card card-side bg-base-100 shadow-xl max-w-[350px] sm:min-w-[370px] md:max-h-[250px] md:min-w-[400px]">
             <figure className='min-w-[37%]'>
-              <Image src="/Images/service2.png"
+              <Image src="/Images/service3.png"
                 width={100}
                 height={250}
                 alt=''
@@ -259,7 +259,8 @@ export default function Home() {
           </div>
           <div className="card card-side bg-base-100 shadow-xl max-w-[350px] sm:min-w-[370px] md:max-h-[250px] md:min-w-[400px]">
             <figure className='min-w-[37%]'>
-              <Image src="/Images/service3.png"
+
+              <Image src="/Images/service2.png"
                 width={100}
                 height={250}
                 alt=''
